@@ -1,4 +1,4 @@
-# loss-for-edge
+# Distill without distillation
 Exploration of loss functions for training smaller models without loss in accuracy
 
 The increased computing capability of GPUs have enabled more deeper and larger models. But the edge devices like mobile require smaller networks for running realtime and power efficiency. Method like knowledge distillation is a way of training smaller networks to achieve comparable accuracy with respect to larger network. But this requires training a larger network or ensemble of models and using the output of the larget model as soft-target for training smaller network. The question is **"Is there any method(training method or loss function) that can be directly used to optimize the network without the traning of larger models at start?"**. This repo is set to explore experimental loss functions and training methods for training smaller models!!
